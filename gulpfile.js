@@ -99,18 +99,6 @@ gulp.task('copy', function(){
     .pipe(gulp.dest('build'));
 });
 
-// gulp.task('sprite', function () {
-//   var spriteData = gulp.src('img/*.png').pipe(spritesmith({
-//     imgName: 'sprite.png',
-//     cssName: 'sprite.scss'
-//   }));
-//   var imgStream = spriteData.img
-//     .pipe(gulp.dest('img/'));
-//   var cssStream = spriteData.scss
-//     .pipe(gulp.dest('sass/global/'));
-//   return gulpMerge(imgStream, cssStream);
-// });
-
 //from example
 gulp.task('sprite', function() {
     var spriteData =
@@ -118,10 +106,11 @@ gulp.task('sprite', function() {
             .pipe(spritesmith({
                 imgName: 'sprite.png',
                 cssName: 'sprite.scss',
+                algorithm: 'binary-tree',
                 padding: 20
             }));
 
-    spriteData.img.pipe(gulp.dest('img/')); // путь, куда сохраняем картинку
+    spriteData.img.pipe(gulp.dest('build/img/')); // путь, куда сохраняем картинку
     spriteData.css.pipe(gulp.dest('sass/global/')); // путь, куда сохраняем стили
 });
 
@@ -149,8 +138,9 @@ gulp.task('images', function() {
 });
 
 gulp.task('build', function(fn){
+  run('clean');
   run('sprite');
-  run('clean', 'copy', 'smartGR', 'copyBootstrapJS', 'images', 'style', fn);
+  run('copy', 'smartGR', 'copyBootstrapJS', 'images', 'style', fn);
 });
 
 gulp.task('server', function(){
