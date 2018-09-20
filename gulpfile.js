@@ -41,9 +41,9 @@ gulp.task('smartGR', function(){
         xs: {
             width: '560px'
         }
-        /* 
+        /*
         We can create any quantity of break points.
- 
+
         some_name: {
             width: 'Npx',
             fields: 'N(px|%|rem)',
@@ -80,7 +80,8 @@ gulp.task('serve', ['style'], function() {
     cors: true,
     ui: false
   });
-  
+
+  //gulp.watch('img/**/*.{png}', ['sprite']).on('change', server.reload);
   gulp.watch('sass/**/*.{scss,sass}', ['style']).on('change', server.reload);
   gulp.watch('*.html', ['copyHtml']);
   gulp.watch('build/*.html').on('change', server.reload);
@@ -98,16 +99,30 @@ gulp.task('copy', function(){
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('sprite', function () {
-  var spriteData = gulp.src('img/*.png').pipe(spritesmith({
-    imgName: 'sprite.png',
-    cssName: 'sprite.css'
-  }));
-  var imgStream = spriteData.img
-    .pipe(gulp.dest('img/'));
-  var cssStream = spriteData.css
-    .pipe(gulp.dest('sass/global/'));
-  return gulpMerge(imgStream, cssStream);
+// gulp.task('sprite', function () {
+//   var spriteData = gulp.src('img/*.png').pipe(spritesmith({
+//     imgName: 'sprite.png',
+//     cssName: 'sprite.scss'
+//   }));
+//   var imgStream = spriteData.img
+//     .pipe(gulp.dest('img/'));
+//   var cssStream = spriteData.scss
+//     .pipe(gulp.dest('sass/global/'));
+//   return gulpMerge(imgStream, cssStream);
+// });
+
+//from example
+gulp.task('sprite', function() {
+    var spriteData =
+        gulp.src('img/*.png') // путь, откуда берем картинки для спрайта
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.scss',
+                padding: 20
+            }));
+
+    spriteData.img.pipe(gulp.dest('img/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('sass/global/')); // путь, куда сохраняем стили
 });
 
 gulp.task('copyBootstrapJS', function(){
@@ -116,7 +131,7 @@ gulp.task('copyBootstrapJS', function(){
 });
 
 gulp.task('clean', function(){
-  return del('build/img');
+  return del('build/img/*.*');
 });
 
 gulp.task('copyHtml', function(){
@@ -134,6 +149,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('build', function(fn){
+  run('sprite');
   run('clean', 'copy', 'smartGR', 'copyBootstrapJS', 'images', 'style', fn);
 });
 
