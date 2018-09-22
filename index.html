@@ -18,9 +18,9 @@
 					<button class="header__toggle-button header__toggle-button--hamburger"></button>
 				</div>
 			</div> -->
+			<a class="header__upper-site-name" href="#">Cakes</a>
 			<nav class="nav nav--header">
 				<ul class="nav__list">
-					<li class="nav__item"><a class="nav__link nav__link--header-nav nav__link--main-page" href="#">Cakes</a></li>
 					<li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">Наши торты</a></li>
 					<li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">Индивидуальный заказ</a></li>
 					<li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">Отзывы</a></li>
@@ -425,16 +425,83 @@
 					</li>
 				</ul>
 			</section>
-			<section class="contacts"></section>
+			<section class="contacts">
+				<h2 class="section__title">
+					Контакты
+				</h2>
+				<p class="section__description">
+					Остались вопросы?
+				</p>
+				<div class="contacts__content-wrapper">
+					<div class="contacts__form-wrapper">
+						<p class="contacts__form-proposal">
+							Заполните форму ниже и наш кондитер свяжется с Вами
+						</p>
+					</div>
+					<form action="https://www.google.by/" class="contacts__form form-contacts">
+						<div class="form-contacts__inner wrapper">
+							<div class="form-contacts__item field-item">
+								<label for="#person-surname"></label>
+								<input type="text" id="#person-name" value="Ваше имя">
+							</div>
+							<div class="form-contacts__item field-item">
+								<label for="#person-email"></label>
+								<input type="text" id="#person-email" value="Email адрес">
+							</div>
+							<div class="form-contacts__item field-item">
+								<label for="#person-question"></label>
+								<input type="text" id="#person-question" value="Ваш вопрос">
+							</div>
+							<a href="#" class="form-contacts__choosing-link choosing-link">
+								Отправить
+							</a>
+						</div>
+					</form>
+					<div class="contacts__info">
+						<div class="contacts__variant">
+							<span class="contacts__variant-description">
+								Или позвоните по телефону:
+							</span>
+							<a href="tel:+79068999296" class="contacts__variant-tel"> <b>+7 906 899 92 96</b></a>
+						</div>
+						<div class="contacts__variant contacts__variant--email">
+							<span class="contacts__variant-description">Наша почта:' '</span>
+							<a href="mailto:bakerybypavel@mail.ru" class="contacts__variant-email">bakerybypavel@mail.ru</a>
+						</div>
+						<div class="contacts__variant contacts__variant--social">
+							<span class="contacts__variant-description">Мы в соцсетях:' '</span>
+							<div class="contacts__variant__social social">
+								<a href="#" class="social__link social__link--instagram"></a>
+								<a href="#" class="social__link social__link--vk"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<div class="footer__social social">
-				<a href="#" class="social__link social__link--twitter"></a>
-				<a href="#" class="social__link social__link--facebook"></a>
-				<a href="#" class="social__link social__link--vk"></a>
+			<div class="footer__upper">
+				<a class="footer__upper-site-name" href="#">Cakes</a>
+				<nav class="nav nav--footer">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="nav__link nav__link--footer-nav" href="#">Наши торты</a></li>
+						<li class="nav__item"><a class="nav__link nav__link--footer-nav" href="#">Индивидуальный заказ</a></li>
+						<li class="nav__item"><a class="nav__link nav__link--footer-nav" href="#">Отзывы</a></li>
+						<li class="nav__item"><a class="nav__link nav__link--footer-nav" href="#">О нас</a></li>
+						<li class="nav__item"><a class="nav__link nav__link--footer-nav" href="#">Как заказать</a></li>
+						<li class="nav__item"><a class="nav__link nav__link--footer-nav" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer__social social">
+					<a href="#" class="social__link social__link--instagram"></a>
+					<a href="#" class="social__link social__link--vk"></a>
+				</div>
 			</div>
+			<p class="foote__copyright">
+				&copy; 2018 Cakes
+			</p>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
