@@ -5,7 +5,17 @@
 
 }
 .header__bottom{
-
+  &-content{
+    @extend %fdc;
+    width: 420px;
+  }
+  &-content-advantages{
+    display: flex;
+  }
+  &-content-advantages-natural,
+  &-content-advantages-delivery{
+    display: flex;
+  }
 }
 .header__logo-toggle{
 

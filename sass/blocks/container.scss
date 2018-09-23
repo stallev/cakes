@@ -1,7 +1,11 @@
 .container{
-
+  width: 1220px;
+  margin: 0 auto;
+  padding: 0 73px;
+  background-color: $body-color;
   &--header-upper{
-
+    display: flex;
+    justify-content: flex-start;
   }
 
 }

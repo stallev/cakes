@@ -1,10 +1,12 @@
 .nav{
+  display: flex;
+  justify-content: space-around;
   &--header{
 
   }
 }
 .nav__list{
-
+  display: flex;
 }
 .nav__item{
 
