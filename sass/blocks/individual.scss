@@ -1,0 +1,9 @@
+.individual{
+  &__step{
+    display: flex;
+  }
+  &__step-info{
+    @extend %fdc;
+  }
+  
+}

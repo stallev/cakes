@@ -1,0 +1,11 @@
+.products{
+  &__list-by-kind,
+  &__list-by-customer{
+    @extend %fdc;
+    height: 653px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+}
