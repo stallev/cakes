@@ -1,0 +1,55 @@
+.about-us{
+  &__inner-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 600px;
+    @extend %fdc;
+  }
+  &__image{
+    width: 510px;
+    height: 510px;
+    background-image: url("../img/content_img/user2_ph.png");
+    background-size: cover;
+  }
+  &__item-subtitle{
+    margin: 10px 0;
+    color: $main_header_color;
+    font-family: Circe;
+    font-size: $fsz20;
+    font-weight: 700;
+    line-height: $fsz27;
+  }
+  &__item-content{
+    color: $main_header_color;
+    font-family: Circe;
+    font-size: $fsz18;
+    font-weight: 400;
+    line-height: 24px;
+    // Text style for ""
+    font-weight: bold;
+  }
+  &__slogan{
+    position: relative;
+    width: 620px;
+    margin: 150px auto 120px auto;
+    text-align: center;
+    color: $main_header_color;
+    font-family: "Playfair Display";
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 37.82px;
+    // Text style for "Я за прост"
+    letter-spacing: 0.22px;
+    &::before{
+      position: absolute;
+      content: "";
+      display: block;
+    }
+  }
+}
+h2.about-us__title{
+  text-align: left;
+}

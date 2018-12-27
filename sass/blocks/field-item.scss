@@ -1,0 +1,33 @@
+.field-item{
+  @extend %fdc;
+  margin-left: 50px;
+  &__info{
+    @extend %fdc;
+    opacity: 0.8;
+    color: $price_color;
+    font-family: Circe;
+    font-size: $fsz18;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+.field-item--size1>label{
+  background-image: url("../img/circle1.png");
+  width: 110px;
+  height: 110px;
+}
+.field-item--size2>label{
+  background-image: url("../img/circle2.png");
+  width: 154px;
+  height: 154px;
+}
+.field-item--size3>label{
+  background-image: url("../img/double_circle.png");
+  width: 174px;
+  height: 174px;
+}
+.field-item--size4>label{
+  background-image: url("../img/circle_3_ins.png");
+  width: 202px;
+  height: 202px;
+}

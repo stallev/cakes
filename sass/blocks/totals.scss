@@ -1,0 +1,43 @@
+.totals{
+  @extend %fdc;
+  &__title{
+    text-align: left;
+    color: $main_header_color;
+    font-family: "Playfair Display";
+    font-size: $fsz27;
+    font-weight: 700;
+    line-height: 65.96px;
+    // Text style for "Ваш выбор"
+    letter-spacing: 0.04px;
+  }
+  &__inner-wrapper{
+    display: flex;
+    align-items: center;
+  }
+  &__list{
+    display: flex;
+  }
+  &__item{
+    @extend %fdc;
+    flex-grow: 1;
+    margin-right: 50px;
+    border-bottom: 1px solid #c1b0af;
+    padding-right: 50px;
+  }
+  &__item-name{
+    margin-bottom: 15px;
+    color: $buttons_color;
+    font-family: "Intro Script R - H 2 Base";
+    font-size: $fsz27;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &__item-value{
+    color: $main_header_color;
+    font-family: Circe;
+    font-size: $fsz18;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+}

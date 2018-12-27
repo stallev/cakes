@@ -1,0 +1,39 @@
+.slide-decor{
+  @extend %fdc;
+  width: 321px;
+  height: 431px;
+  margin-left: 100px;
+  padding-right: 0;
+  padding-bottom: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  align-items: center;
+  &__description{
+    @extend %fdc;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  &__description-title{
+    margin-bottom: 15px;
+    color: $price_color;
+    font-family: Circe;
+    font-size: $fsz20;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &__description-price{
+    color: $price_color;
+    font-family: "Playfair Display";
+    font-size: $fsz22;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  &--berries{
+    background-image: url("../img/content_img/cakes_slideshow_1.jpg");
+  }
+  &--marshmellou{
+    background-image: url("../img/content_img/cakes_slideshow_2.jpg");
+  }
+}

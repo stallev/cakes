@@ -1,0 +1,19 @@
+.cakes-size{
+  margin-bottom: 30px;
+  width: 100%;
+  &__inner-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__label{
+    margin-bottom: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: content;
+    outline: 1px solid red;
+  }
+}
+.cakes-size input{
+  display: none;
+}

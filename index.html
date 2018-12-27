@@ -135,14 +135,14 @@
 					Соберите торт в три шага
 				</span>
 				<div class="individual__steps-list">
-					<div class="individual__step order-step">
+					<div class="order-step order-step--stuffing">
 						<p class="order-step__info">
 							<span class="order-step__number">01</span>
 							<span class="order-step__name">Выберите начинку</span>
 						</p>
 						<div class="order-step__slide-wrapper">
 							<div class="order-step__slide slide">
-								<img src="..img/content_img/" alt="1" class="order-step__image">
+								<img src="../img/content_img/ingrdien_ph.jpg" alt="1" class="order-step__image">
 								<div class="order-step__description">
 									<h4 class="order-step__description-title">Шоколадный ганаш</h4>
 									<p class="order-step__description-content">
@@ -153,6 +153,7 @@
 										<span class="order-step__price-currency">руб/кг</span>
 									</p>
 									<a href="#" class="order-step__choosing-link choosing-link">Выбрать</a>
+									<span class="order-step__slide-number">1/2</span>
 								</div>
 							</div>
 							<div class="order-step__slide slide">
@@ -167,107 +168,108 @@
 										<span class="order-step__price-currency">руб/кг</span>
 									</p>
 									<a href="#" class="order-step__choosing-link choosing-link">Выбрать</a>
+									<span class="order-step__slide-number">1/2</span>
 								</div>
 							</div>
 						</div>
-						<span class="order-step__slide-number">1/2</span>
 					</div>
-					<div class="individual__step order-step">
+					<div class="order-step order-step--size">
 						<p class="order-step__info">
 							<span class="order-step__number">02</span>
 							<span class="order-step__name">Размер</span>
 						</p>
 						<form action="http://localhost:3000" class="cakes-size">
-							<div class="form__inner-wrapper">
+							<div class="cakes-size__inner-wrapper">
 								<div class="field-item field-item--size1">
-									<label for="#person-surname"></label>
-									<input type="text" id="#person-surname" value="Укажите фамилию *">
+									<label class="cakes-size__label"for="#cake_size1"></label>
+									<input type="checkbox" id="#cake_size1">
 									<div class="field-item__info">
 										<span class="field-item__height">17-18 см</span>
 										<span class="field-item__person-count">(1кг - 6 персон)</span>
 									</div>
 								</div>
 								<div class="field-item field-item--size2">
-									<label for="#person-surname"></label>
-									<input type="text" id="#person-surname" value="Укажите фамилию *">
+									<label class="cakes-size__label"for="#cake_size2"></label>
+									<input type="checkbox" id="#cake_size2">
 									<div class="field-item__info">
-										<span class="field-item__height">17-18 см</span>
-										<span class="field-item__person-count">(1кг - 6 персон)</span>
+										<span class="field-item__height">23-24 см</span>
+										<span class="field-item__person-count">(10 - 12 персон)</span>
 									</div>
 								</div>
 								<div class="field-item field-item--size3">
-									<label for="#person-surname"></label>
-									<input type="text" id="#person-surname" value="Укажите фамилию *">
+									<label class="cakes-size__label"for="#cake_size3"></label>
+									<input type="checkbox" id="#cake_size3">
 									<div class="field-item__info">
-										<span class="field-item__height">17-18 см</span>
-										<span class="field-item__person-count">(1кг - 6 персон)</span>
+										<span class="field-item__height">Два яруса 25 и 20 см</span>
+										<span class="field-item__person-count">(15 - 20 персон)</span>
 									</div>
 								</div>
 								<div class="field-item field-item--size4">
-									<label for="#person-surname"></label>
-									<input type="text" id="#person-surname" value="Укажите фамилию *">
+									<label class="cakes-size__label"for="#cake_size4"></label>
+									<input type="checkbox" id="#cake_size4">
 									<div class="field-item__info">
-										<span class="field-item__height">17-18 см</span>
-										<span class="field-item__person-count">(1кг - 6 персон)</span>
+										<span class="field-item__height">Три яруса - 30, 25 и 18 см</span>
+										<span class="field-item__person-count">(25 - 30 персон)</span>
 									</div>
 								</div>
 							</div>
 						</form>
 					</div>
-					<div class="individual__step order-step">
+					<div class="order-step order-step--decoration">
 						<div class="order-step__wrapper">
 							<p class="order-step__info">
 								<span class="order-step__number">03</span>
 								<span class="order-step__name">Оформление</span>
 							</p>
 							<div class="order-step__slide-wrapper">
-								<div class="order-step__slide slide-decor slide">
-									<img src="..img/content_img/" alt="1" class="slide-decor__image">
+								<div class="order-step__slide slide-decor slide-decor--berries">
 									<div class="slide-decor__description">
-										<img src="..img/content_img/" alt="1" class="slide-decor__description-image">
 										<h4 class="slide-decor__description-title">Ягодное ассорти</h4>
-										<p class="order-step__price order-step__price--slide-decor">
-											<span class="order-step__price-value">1000</span>
-											<span class="order-step__price-currency">
+										<p class="slide-decor__description-price">
+											<span class="slide-decor__description-price-value">1000</span>
+											<span class="slide-decor__description-price-currency">
 												руб/кг
 											</span>
 										</p>
-										<a href="#" class="slide-decor__choosing-link choosing-link">Выбрать</a>
 									</div>
 								</div>
-								<div class="order-step__slide slide-decor slide">
-									<img src="..img/content_img/" alt="1" class="slide-decor__image">
+								<div class="order-step__slide slide-decor slide-decor--marshmellou">
 									<div class="slide-decor__description">
-										<img src="..img/content_img/" alt="1" class="slide-decor__description-image">
-										<h4 class="slide-decor__description-title">Ягодное ассорти</h4>
-										<p class="order-step__price order-step__price--slide-decor">
-											<span class="order-step__price-value">1000</span>
-											<span class="order-step__price-currency">
+										<h4 class="slide-decor__description-title">Маршмэллоу</h4>
+										<p class="slide-decor__description-price">
+											<span class="slide-decor__description-price-value">1000</span>
+											<span class="slide-decor__description-price-currency">
 												руб/кг
 											</span>
 										</p>
-										<a href="#" class="slide-decor__choosing-link choosing-link">Выбрать</a>
 									</div>
 								</div>
 							</div>
 							<span class="order-step__slide-number">2/35</span>
 						</div>
 						<div class="order-step__totals totals">
-							<div class="totals__stuffing">
-								<span class="totals__item-name ">Начинка</span>
-								<span class="totals__item-value ">Начинка</span>
+							<h3 class="totals__title">
+							Ваш выбор
+							</h3>
+							<div class="totals__inner-wrapper">
+								<div class="totals__list">
+									<div class="totals__item">
+										<span class="totals__item-name ">Начинка</span>
+										<span class="totals__item-value ">Шоколадный ганаш</span>
+									</div>
+									<div class="totals__item">
+										<span class="totals__item-name ">Размер</span>
+										<span class="totals__item-value ">2 кг</span>
+									</div>
+									<div class="totals__item">
+										<span class="totals__item-name ">Оформление</span>
+										<span class="totals__item-value ">Маршмэллоу</span>
+									</div>
+								</div>
+								<a href="#" class="totals__choosing-link choosing-link">
+									Заказать торт
+								</a>
 							</div>
-							<div class="totals__size">
-								<span class="totals__item-name ">Начинка</span>
-								<span class="totals__item-value ">Начинка</span>
-							</div>
-							<div class="totals__decor">
-								<span class="totals__item-name ">Начинка</span>
-								<span class="totals__item-value ">Начинка</span>
-							</div>
-							<a href="#" class="totals__choosing-link choosing-link">
-								Заказать торт
-							</a>
 						</div>
 					</div>
 				</div>
@@ -279,22 +281,24 @@
 				<div class="reviews__wrapper">
 					<div class="reviews__list">
 						<div class="slide-review slide">
-							<img src="..img/content_img/" alt="1" class="slide-decor__image">
+							<img src="../img/content_img/user1_ph.png" alt="1" class="slide-review__image">
 							<div class="slide-review__description">
 								<span class="slide-review__name">Мария</span>
 								<p class="slide-review__person-info">
 									<span class="slide-review__person-profession">юрист</span>
 									<span class="slide-review__person-age">33 года</span>
 								</p>
-								<p class="slide-review__review-text">
-									Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) 
-								</p>
+								<div class="item-info">
+									<p class="item-info__sm-text">
+										Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) 
+									</p>
+								</div>
 								<a href="#" class="slide-review__read-more">
 									Развернуть..
 								</a>
 							</div>
 						</div>
-						<div class="slide-review slide">
+						<div class="slide-review slide slide-review--hidden">
 							<img src="..img/content_img/" alt="1" class="slide-decor__image">
 							<div class="slide-review__description">
 								<span class="slide-review__name">Мария</span>
@@ -302,9 +306,11 @@
 									<span class="slide-review__person-profession">юрист</span>
 									<span class="slide-review__person-age">33 года</span>
 								</p>
-								<p class="slide-review__review-text">
-									Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) 
-								</p>
+								<div class="item-info">
+									<p class="item-info__sm-text">
+										Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) 
+									</p>
+								</div>
 								<a href="#" class="slide-review__read-more">
 									Развернуть..
 								</a>
@@ -315,35 +321,39 @@
 			</section>
 			<section class="section about-us">
 				<div class="about-us__inner-wrapper">
-					<h2 class="about-us__title section__title">
-						О нас
-					</h2>
-					<article class="about-us__info">
-						<h5 class="about-us__info-title section__description">О кондитере</h5>
-						<div class="about-us__info-item item__info">
-							<span class="item__info__subtitle">
-								Кондитер – как призвание
-							</span>
-							<p class="item__info__content">
-								Павел — профессиональный повар в различных гастрономических
-								областях, но однажды его сердце покорило кондитерское искусство.
-								С ранних лет он увлекался утонченным мастерством и обратился
-								к своим талантам как кондитер.
-							</p>
+					<div class="about-us__content">
+						<h2 class="about-us__title section__title">
+							О нас
+						</h2>
+						<article class="about-us__info">
+							<h4 class="about-us__info-title section__description">О кондитере</h4>
+							<div class="about-us__item item-info">
+								<h5 class="item-info__title">
+									Кондитер – как призвание
+								</h5>
+								<p class="item-info__sm-text">
+									Павел — профессиональный повар в различных гастрономических
+									областях, но однажды его сердце покорило кондитерское искусство.
+									С ранних лет он увлекался утонченным мастерством и обратился
+									к своим талантам как кондитер.
+								</p>
+							</div>
+							<div class="about-us__item item-info">
+								<h5 class="item-info__title">
+									Принцип – натуральные ингредиенты
+								</h5>
+								<p class="item-info__sm-text">
+									Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.
+								</p>
+							</div>
+						</article>
+						<div class="about-us__social">
+							<a href="#" class="social__link social__link--instagram"></a>
+							<a href="#" class="social__link social__link--vk"></a>
+							<a href="#" class="social__link social__link--twitter"></a>
 						</div>
-						<div class="about-us__info-item item__info">
-							<span class="item__info__subtitle">
-								Принцип – натуральные ингредиенты
-							</span>
-							<p class="aitem__info__content">
-								Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.
-							</p>
-						</div>
-					</article>
-					<div class="about-us__social">
-						<a href="#" class="social__link social__link--instagram"></a>
-						<a href="#" class="social__link social__link--vk"></a>
-						<a href="#" class="social__link social__link--twitter"></a>
+					</div>
+					<div class="about-us__image">
 					</div>
 				</div>
 				<p class="about-us__slogan">
@@ -351,33 +361,35 @@
 				</p>
 			</section>
 			<section class="section advantages">
-				<h2 class="section__title">
-					Наши преимущества
-				</h2>
-				<p class="section__description">
-					Почему нас выбирают?
-				</p>
-				<article class="advantages__item reason">
-					<img src="..img/content_img" alt="1" class="reason__image">
-					<div class="reason__info">
-						<div class="reason__info-item item__info">
-							<span class="item__info__subtitle item__info__subtitle--natural-components">
-								Без искусственных добавок
-							</span>
-							<p class="aitem__info__content">
-								Работаем  с натуральными ингредиентами и свежими продуктами
-							</p>
-						</div>
-						<div class="reason__info-item item__info">
-							<span class="item__info__subtitle">
-								Свежий торт в день торжества
-							</span>
-							<p class="aitem__info__content">
-								Торты изготавливаются в течение суток до отправки
-							</p>
+				<img src="..img/content_img" alt="1" class="reason__image">
+				<div class="advantages__content">
+					<h2 class="section__title">
+						Наши преимущества
+					</h2>
+					<p class="section__description">
+						Почему нас выбирают?
+					</p>
+					<div class="advantages__item reason">
+						<div class="reason__info">
+							<div class="reason__info-item item-info">
+								<h5 class="item-info__title ">
+									Без искусственных добавок
+								</h5>
+								<p class="item-info__sm-text">
+									Работаем  с натуральными ингредиентами и свежими продуктами
+								</p>
+							</div>
+							<div class="item-info">
+								<h5 class="item-info__title">
+									Свежий торт в день торжества
+								</h5>
+								<p class="item-info__sm-text">
+									Торты изготавливаются в течение суток до отправки
+								</p>
+							</div>
 						</div>
 					</div>
-				</article>
+					</div>
 			</section>
 			<section class="section care-of-the-clients">
 				<h2 class="section__title">
@@ -386,7 +398,7 @@
 				<p class="section__description">
 					Для нас важна
 				</p>
-				<p class="care-of-the-clients__content">
+				<p class="care-of-the-clients__text">
 					Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.
 				</p>
 			</section>
@@ -395,7 +407,7 @@
 					Как заказать
 				</h2>
 				<ul>
-					<li class="order-instructions__item">
+					<li class="item-info">
 						<span class="order-instructions__item-number">1</span>
 						<div class="order-instructions__item-content">
 							<span class="p order-instructions__item-title">
@@ -426,10 +438,6 @@
 							<p class="order-instructions__item-text">
 								Доставка за пределами города рассчитывается индивидуально.
 							</p>
-
-
-
-
 						</div>
 					</li>
 				</ul>

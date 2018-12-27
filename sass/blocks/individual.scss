@@ -1,9 +1,6 @@
 .individual{
+  margin-top: 50px;
   &__step{
-    display: flex;
+    
   }
-  &__step-info{
-    @extend %fdc;
-  }
-  
 }

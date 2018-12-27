@@ -1,0 +1,56 @@
+.order-step{
+  display: flex;
+  padding: 0 60px;
+  padding-top: 80px;
+  padding-bottom: 95px;
+  margin-bottom: 45px;
+  background-color: $text_button_color;
+  box-shadow: 0 $fsz5 13px 1px rgba(163, 6, 60, 0.1);
+  &--decoration{
+    @extend %fdc;
+  }
+  &__info{
+    @extend %fdc;
+  }
+  &__slide{
+    padding-right: 200px;
+  }
+  &__image{
+    width: 344px;
+    height: 349px;
+  }
+  &__description{
+    @extend %fdc;
+    padding-left: 50px;
+  }
+  &__number{
+    color: $buttons_color;
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 169.52px;
+    // Text style for "03"
+    letter-spacing: 0.04px;
+  }
+  &__name{
+    color: $buttons_color;
+    font-family: "Playfair Display";
+    font-size: $fsz27;
+    font-weight: 700;
+    line-height: 65.96px;
+    // Text style for "Оформление"
+    letter-spacing: 0.04px;
+  }
+  &__slide-wrapper{
+    display: flex;
+  }
+  &__slide-number{
+    margin-top: auto;
+    margin-left: auto;
+  }
+  &__wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
